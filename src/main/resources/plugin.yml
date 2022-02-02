@@ -1,4 +1,5 @@
-name: Proton
-version: ${version}
-main: cc.fyre.proton.Proton
-depend: [ProtocolLib]
+name: Piston
+main: cc.fyre.piston.Piston
+version: 1.0-SNAPSHOT
+author: Alfie
+depend: [Proton]
