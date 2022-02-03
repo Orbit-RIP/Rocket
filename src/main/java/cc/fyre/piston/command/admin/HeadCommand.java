@@ -29,6 +29,6 @@ public class HeadCommand {
 
         sender.getInventory().addItem(new ItemStack[]{item});
 
-        sender.sendMessage(ChatColor.GOLD + "You were given " + ChatColor.WHITE + name + ChatColor.GOLD + "'s head.");
+        sender.sendMessage(ChatColor.GREEN + "You were given " + ChatColor.WHITE + name + ChatColor.GOLD + "'s head.");
     }
 }

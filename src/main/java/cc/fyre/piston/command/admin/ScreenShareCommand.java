@@ -18,7 +18,7 @@ public class ScreenShareCommand {
     )
     public static void screenshare(CommandSender sender, @Parameter(name="player") Player player) {
         Piston.getInstance().getServerHandler().freeze(player);
-        sender.sendMessage(ChatColor.YELLOW + "You froze " + player.getDisplayName() + "!");
+        sender.sendMessage(ChatColor.RED + "You have frozen " + player.getDisplayName() + "!");
         new BukkitRunnable(){
 
             @Override

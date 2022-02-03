@@ -17,10 +17,10 @@ public class KillCommand {
         player.setHealth(0.0);
 
         if (player.equals(sender)) {
-            sender.sendMessage(ChatColor.GOLD + "You have been killed.");
+            sender.sendMessage(ChatColor.GREEN + "You have been killed.");
             return;
         }
 
-        sender.sendMessage(player.getDisplayName() + ChatColor.GOLD + " has been killed.");
+        sender.sendMessage(player.getDisplayName() + ChatColor.GREEN + " has been killed.");
     }
 }

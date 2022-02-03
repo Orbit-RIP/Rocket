@@ -27,8 +27,8 @@ public class ReportCommand {
 
         Piston.getInstance().getReportCooldownCache().put(player.getUniqueId(),new Cooldown(60_000L));
 
-        Proton.getInstance().getPidginHandler().sendPacket(new StaffBroadcastPacket(NeutronConstants.STAFF_PERMISSION,ChatColor.GRAY + "[" + ChatColor.BLUE + "Report" + ChatColor.GRAY + "]" +
-                "[" + ChatColor.BLUE + Bukkit.getServerName() + ChatColor.GRAY + "] " + player.getDisplayName() + ChatColor.GRAY + " has reported " + target.getDisplayName() + ChatColor.GRAY + ": " + ChatColor.GRAY + reason)
+        Proton.getInstance().getPidginHandler().sendPacket(new StaffBroadcastPacket(NeutronConstants.STAFF_PERMISSION,ChatColor.GOLD + "[" + ChatColor.GOLD + "Report" + ChatColor.GOLD + "]" +
+               ChatColor.GRAY + " (" + ChatColor.YELLOW + Bukkit.getServerName() + ChatColor.GRAY + ") " + player.getDisplayName() + ChatColor.GRAY + " has reported " + target.getDisplayName() + ChatColor.GRAY + ": " + ChatColor.GOLD + reason)
         );
     }
 

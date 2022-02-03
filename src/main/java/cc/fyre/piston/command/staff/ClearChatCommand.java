@@ -10,7 +10,7 @@ import org.bukkit.entity.Player;
 public class ClearChatCommand {
 
     @Command(
-            names = {"clearchat"},
+            names = {"clearchat","CC"},
             permission = "piston.command.clearchat"
     )
     public static void execute(CommandSender sender) {
@@ -20,7 +20,7 @@ public class ClearChatCommand {
         for (Player loopPlayer : Piston.getInstance().getServer().getOnlinePlayers()) {
 
             if (loopPlayer.hasPermission(NeutronConstants.STAFF_PERMISSION)) {
-                loopPlayer.sendMessage(ChatColor.GRAY + "[" + ChatColor.DARK_PURPLE + "C" + ChatColor.GRAY + "] " + displayName + ChatColor.GRAY + " has " + ChatColor.LIGHT_PURPLE + "cleared" + ChatColor.GRAY + " the chat.");
+                loopPlayer.sendMessage(ChatColor.GREEN + "The chat has been cleared by a staff member");
                 continue;
             }
 

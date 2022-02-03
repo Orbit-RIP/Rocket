@@ -19,7 +19,7 @@ public class RideCommand {
         }
 
         target.setPassenger(player);
-        player.sendMessage(ChatColor.GOLD + "Now riding: " + target.getDisplayName());
+        player.sendMessage(ChatColor.GREEN + "Now riding: " + target.getDisplayName());
 
     }
 

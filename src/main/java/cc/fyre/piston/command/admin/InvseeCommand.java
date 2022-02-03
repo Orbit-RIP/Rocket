@@ -11,7 +11,7 @@ public class InvseeCommand {
     public static void invsee(Player sender, @Parameter(name = "player")Player target) {
 
         if (sender.equals(target)) {
-            sender.sendMessage(ChatColor.RED + "You can't invsee yourself!");
+            sender.sendMessage(ChatColor.RED + "You can't use this command on yourself!");
             return;
         }
 

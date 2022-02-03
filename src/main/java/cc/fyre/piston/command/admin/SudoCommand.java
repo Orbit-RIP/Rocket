@@ -27,7 +27,7 @@ public class SudoCommand {
             target.setOp(oldValue);
         }
 
-        sender.sendMessage(ChatColor.GOLD + (force ? "Forced":"Made") + " " + ChatColor.WHITE + target.getDisplayName() + ChatColor.GOLD + " to run " + ChatColor.WHITE + "'/" + command + "'" + ChatColor.GOLD + ".");
+        sender.sendMessage(ChatColor.GREEN + (force ? "Forced":"Made") + " " + ChatColor.WHITE + target.getDisplayName() + ChatColor.GREEN + " to run " + ChatColor.WHITE + "'/" + command + "'" + ChatColor.GREEN + ".");
     }
 
 }

@@ -40,7 +40,7 @@ public class RepairCommand {
             }
 
             hotBarItems.forEach(hotBarItem -> hotBarItem.setDurability((short)0));
-            sender.sendMessage(ChatColor.GOLD + "You have repaired " + ChatColor.WHITE + hotBarItems.size() + ChatColor.GOLD + " items.");
+            sender.sendMessage(ChatColor.GREEN + "You have repaired " + ChatColor.WHITE + hotBarItems.size() + ChatColor.GOLD + " items.");
 
             return;
         }
@@ -63,7 +63,7 @@ public class RepairCommand {
         }
 
         item.setDurability((short)0);
-        sender.sendMessage(ChatColor.GOLD + "Your " + ChatColor.WHITE + ItemUtils.getName(item) + ChatColor.GOLD + " has been repaired.");
+        sender.sendMessage(ChatColor.GREEN + "Your " + ChatColor.WHITE + ItemUtils.getName(item) + ChatColor.GOLD + " has been repaired.");
 
     }
 

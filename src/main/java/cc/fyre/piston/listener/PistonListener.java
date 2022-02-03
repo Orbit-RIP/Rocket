@@ -87,7 +87,7 @@ public class PistonListener implements Listener {
 
             final UUID uuid = UUIDUtils.uuid(skull.getOwner());
 
-            event.getPlayer().sendMessage(ChatColor.GOLD + "This is the head of: " + (uuid == null ? ChatColor.WHITE + skull.getOwner():Neutron.getInstance().getProfileHandler().fromUuid(uuid,true).getFancyName()));
+            event.getPlayer().sendMessage(ChatColor.GREEN + "This is the head of: " + (uuid == null ? ChatColor.WHITE + skull.getOwner():Neutron.getInstance().getProfileHandler().fromUuid(uuid,true).getFancyName()));
         } catch (NullPointerException ignored) {}
 
     }

@@ -23,17 +23,17 @@ public class TeleportCommand {
         }
 
         player.teleport(target);
-        player.sendMessage(ChatColor.GOLD + "Teleporting you to " + (player.isOnline() ? "" : "offline player ") + ChatColor.WHITE + target.getDisplayName() + ChatColor.GOLD + ".");
+        player.sendMessage(ChatColor.GREEN + "Teleporting you to " + (player.isOnline() ? "" : "offline player ") + ChatColor.WHITE + target.getDisplayName() + ChatColor.GREEN + ".");
     }
 
     @Command(names = { "tphere", "bring", "s" }, permission = "piston.command.teleport.other", description = "Teleport a player to you")
     public static void execute(Player player, @Parameter(name = "player") Player target, @Flag(value = { "s", "silent" }, description = "Silently teleport the player (staff members always get messaged)")boolean silent) {
         target.teleport(player);
 
-        player.sendMessage(ChatColor.GOLD + "Teleporting " + ChatColor.WHITE + target.getDisplayName() + ChatColor.GOLD + " to you.");
+        player.sendMessage(ChatColor.GREEN + "Teleporting " + ChatColor.WHITE + target.getDisplayName() + ChatColor.GREEN + " to you.");
 
         if (!silent || target.hasPermission(NeutronConstants.STAFF_PERMISSION)) {
-            target.sendMessage(ChatColor.GOLD + "Teleporting you to " + ChatColor.WHITE + player.getDisplayName() + ChatColor.GOLD + ".");
+            target.sendMessage(ChatColor.GREEN + "Teleporting you to " + ChatColor.WHITE + player.getDisplayName() + ChatColor.GREEN + ".");
         }
 
     }
@@ -47,7 +47,7 @@ public class TeleportCommand {
         }
 
         target.teleport(Piston.getInstance().getBackCache().get(target.getUniqueId()));
-        target.sendMessage(ChatColor.GOLD + "Teleporting " + (target.getUniqueId().equals(player.getUniqueId()) ? "":target.getDisplayName()) + "to " + (target.getUniqueId().equals(player.getUniqueId()) ? "your":"their") + " last recorded location.");
+        target.sendMessage(ChatColor.GREEN + "Teleporting " + (target.getUniqueId().equals(player.getUniqueId()) ? "":target.getDisplayName()) + "to " + (target.getUniqueId().equals(player.getUniqueId()) ? "your":"their") + " last recorded location.");
     }
 
     @Command(names = { "tppos" }, permission = "piston.command.teleport", description = "Teleport to coordinates")
@@ -71,10 +71,10 @@ public class TeleportCommand {
         final String location = ChatColor.translateAlternateColorCodes('&',String.format("&e[&f%s&e, &f%s&e, &f%s&e]&6", x, y, z));
 
         if (!player.equals(target)) {
-            player.sendMessage(ChatColor.GOLD + "Teleporting " + ChatColor.WHITE + target.getDisplayName() + ChatColor.GOLD + " to " + location + ".");
+            player.sendMessage(ChatColor.GREEN + "Teleporting " + ChatColor.WHITE + target.getDisplayName() + ChatColor.GREEN + " to " + location + ".");
         }
 
-        target.sendMessage(ChatColor.GOLD + "Teleporting you to " + location + ".");
+        target.sendMessage(ChatColor.GREEN + "Teleporting you to " + location + ".");
     }
 
     private static boolean isBlock(double value) {

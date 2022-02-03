@@ -35,6 +35,6 @@ public class SpawnerCommand {
 
         spawner.setSpawnedType(type);
         spawner.update();
-        sender.sendMessage(ChatColor.GOLD + "Updated this spawner to a " + ChatColor.WHITE + EntityUtils.getName(type) + ChatColor.GOLD + " spawner.");
+        sender.sendMessage(ChatColor.GREEN + "Updated this spawner to a " + ChatColor.WHITE + EntityUtils.getName(type) + ChatColor.GREEN + " spawner.");
     }
 }

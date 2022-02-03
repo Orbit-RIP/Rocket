@@ -33,7 +33,7 @@ public class RenameCommand {
         itemMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&',name));
         itemStack.setItemMeta(itemMeta);
 
-        player.sendMessage(ChatColor.GOLD + "Renamed item to: " + ChatColor.translateAlternateColorCodes('&',name));
+        player.sendMessage(ChatColor.GREEN + "Renamed item to: " + ChatColor.translateAlternateColorCodes('&',name));
 
     }
 

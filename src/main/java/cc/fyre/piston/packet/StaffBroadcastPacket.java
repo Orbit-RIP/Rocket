@@ -2,6 +2,7 @@ package cc.fyre.piston.packet;
 
 import cc.fyre.piston.Piston;
 import cc.fyre.proton.pidgin.packet.Packet;
+import com.google.gson.JsonObject;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

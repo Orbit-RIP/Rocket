@@ -33,7 +33,7 @@ public class SpeedCommand {
         player.sendMessage(ChatColor.GOLD + (fly ? "Fly" : "Walk") + " speed set to " + ChatColor.WHITE + speed + ChatColor.GOLD + ".");
 
         if (!sender.getUniqueId().equals(player.getUniqueId())) {
-            player.sendMessage(ChatColor.GOLD + "Set " + player.getDisplayName() + ChatColor.GOLD + "'s " + (fly ? "fly" : "walk") + " to " + ChatColor.WHITE + speed + ChatColor.GOLD + ".");
+            player.sendMessage(ChatColor.GREEN + "Set " + player.getDisplayName() + ChatColor.GOLD + "'s " + (fly ? "fly" : "walk") + " to " + ChatColor.WHITE + speed + ChatColor.GOLD + ".");
         }
 
     }

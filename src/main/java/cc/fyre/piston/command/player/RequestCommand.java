@@ -12,7 +12,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 
-public class RequestCommand {
+public class  RequestCommand {
 
     @Command(
             names = {"request","helpop"},
@@ -27,8 +27,8 @@ public class RequestCommand {
 
         Piston.getInstance().getRequestCooldownCache().put(player.getUniqueId(),new Cooldown(60_000L));
 
-        Proton.getInstance().getPidginHandler().sendPacket(new StaffBroadcastPacket(NeutronConstants.STAFF_PERMISSION,ChatColor.GRAY + "[" + ChatColor.GOLD + "Request" + ChatColor.GRAY + "]" +
-                "[" + ChatColor.GOLD + Bukkit.getServerName() + ChatColor.GRAY + "] " + player.getDisplayName() + ChatColor.GRAY + " has requested assistance: " + ChatColor.WHITE + reason)
+        Proton.getInstance().getPidginHandler().sendPacket(new StaffBroadcastPacket(NeutronConstants.STAFF_PERMISSION,ChatColor.GOLD + "[" + ChatColor.GOLD + "Request" + ChatColor.GOLD + "]" +
+               ChatColor.GRAY + " (" + ChatColor.YELLOW + Bukkit.getServerName() + ChatColor.GRAY + ") " + ChatColor.GOLD + player.getDisplayName() + ChatColor.GRAY + " needs assistance: " + ChatColor.GOLD + reason)
         );
     }
 

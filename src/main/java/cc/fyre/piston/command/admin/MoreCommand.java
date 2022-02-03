@@ -19,7 +19,7 @@ public class MoreCommand {
         }
 
         player.getItemInHand().setAmount(bypass ? 64:player.getItemInHand().getMaxStackSize());
-        player.sendMessage(ChatColor.GOLD + "There you go.");
+        player.sendMessage(ChatColor.GREEN + "Given 64x the item!");
 
     }
 

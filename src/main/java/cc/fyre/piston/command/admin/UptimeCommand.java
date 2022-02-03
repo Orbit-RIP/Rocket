@@ -29,7 +29,7 @@ public class UptimeCommand {
             color = ChatColor.DARK_RED;
         }
 
-        sender.sendMessage(ChatColor.GOLD + "The server has been running for " + color + TimeUtils.formatIntoDetailedString((int)(uptime/1000)) + ChatColor.GOLD + ".");
+        sender.sendMessage(ChatColor.RED + "The server has been running for " + color + TimeUtils.formatIntoDetailedString((int)(uptime/1000)) + ChatColor.RED + ".");
     }
 
 }

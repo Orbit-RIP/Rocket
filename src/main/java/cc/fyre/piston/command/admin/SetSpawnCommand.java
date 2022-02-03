@@ -23,7 +23,7 @@ public class SetSpawnCommand {
         final BlockFace face = yawToFace(location.getYaw());
 
         sender.getWorld().setSpawnLocation(location.getBlockX(), location.getBlockY(), location.getBlockZ(), (float)faceToYaw(face), 0.0f);
-        sender.sendMessage(ChatColor.GOLD + "Set the spawn for " + ChatColor.WHITE + sender.getWorld().getName() + ChatColor.GOLD + ".");
+        sender.sendMessage(ChatColor.GREEN + "Set the spawn for " + ChatColor.RED + sender.getWorld().getName() + ChatColor.GREEN + ".");
     }
 
     private static BlockFace yawToFace(final float yaw) {

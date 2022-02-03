@@ -17,7 +17,7 @@ public class FreezeCommand {
     )
     public static void execute(CommandSender sender, @Parameter(name = "player") Player player) {
         Piston.getInstance().getServerHandler().freeze(player);
-        sender.sendMessage(player.getDisplayName() + ChatColor.GOLD + " has been frozen.");
+        sender.sendMessage(player.getDisplayName() + ChatColor.RED + " has been frozen.");
     }
 
     @Command(
@@ -25,7 +25,7 @@ public class FreezeCommand {
             permission = "piston.command.freeze")
     public static void unfreeze(CommandSender sender, @Parameter(name = "player") Player player) {
         Piston.getInstance().getServerHandler().unfreeze(player.getUniqueId());
-        sender.sendMessage(player.getDisplayName() + ChatColor.GOLD + " has been unfrozen.");
+        sender.sendMessage(player.getDisplayName() + ChatColor.RED + " has been unfrozen.");
     }
 
 }

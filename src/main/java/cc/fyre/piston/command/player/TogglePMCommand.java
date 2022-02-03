@@ -19,7 +19,7 @@ public class TogglePMCommand {
             Piston.getInstance().getToggleMessagesCache().put(player.getUniqueId(),!Piston.getInstance().getToggleMessagesCache().get(player.getUniqueId()));
         }
 
-        player.sendMessage(ChatColor.GOLD + "PM: " + (Piston.getInstance().getToggleMessagesCache().get(player.getUniqueId()) ? ChatColor.GREEN + "Enabled":ChatColor.RED + "Disabled"));
+        player.sendMessage(ChatColor.GOLD + "Messages: " + (Piston.getInstance().getToggleMessagesCache().get(player.getUniqueId()) ? ChatColor.GREEN + "Enabled":ChatColor.RED + "Disabled"));
     }
 
 }

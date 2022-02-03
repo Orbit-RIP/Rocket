@@ -19,7 +19,7 @@ public class HidePlayerCommand {
         }
 
         player.hidePlayer(target);
-        player.sendMessage(ChatColor.GOLD + "Now hiding: " + target.getDisplayName());
+        player.sendMessage(ChatColor.GREEN + "Now hiding: " + target.getDisplayName());
 
     }
 

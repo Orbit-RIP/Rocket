@@ -25,7 +25,7 @@ public class MuteChatCommand {
                 continue;
             }
 
-            loopPlayer.sendMessage(ChatColor.LIGHT_PURPLE + "Chat has been " + (Piston.getInstance().getChatHandler().isMuted() ? "muted":"unmuted") + " by " + displayName + ".");
+            loopPlayer.sendMessage(ChatColor.GREEN + "Public chat has been " + (Piston.getInstance().getChatHandler().isMuted() ? "muted":"unmuted") + ".");
         }
     }
 }

@@ -21,7 +21,7 @@ public class StaffChatCommand {
         final String displayName = sender instanceof Player ? ((Player)sender).getDisplayName(): NeutronConstants.CONSOLE_NAME;
 
         Proton.getInstance().getPidginHandler().sendPacket(new StaffBroadcastPacket(NeutronConstants.STAFF_PERMISSION,ChatColor.GOLD + "[Staff]" +
-                ChatColor.GRAY + " [" + ChatColor.GOLD + Bukkit.getServerName() + ChatColor.GRAY + "] " + displayName + ChatColor.GRAY + ": " + ChatColor.WHITE + message)
+                ChatColor.GRAY + " (" + ChatColor.YELLOW + Bukkit.getServerName() + ChatColor.GRAY + ") " + displayName + ChatColor.GRAY + ": " + ChatColor.YELLOW + message)
         );
 
     }

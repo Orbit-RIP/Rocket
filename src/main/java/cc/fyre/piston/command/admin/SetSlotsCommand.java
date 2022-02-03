@@ -25,7 +25,7 @@ public class SetSlotsCommand {
         Piston.getInstance().getConfig().set("server.slots",slots);
         Piston.getInstance().saveConfig();
 
-        sender.sendMessage(ChatColor.GOLD + "Slots set to " + ChatColor.WHITE + slots + ChatColor.GOLD + ".");
+        sender.sendMessage(ChatColor.GREEN + "Slots set to " + ChatColor.WHITE + slots + ChatColor.GREEN + ".");
     }
 
 }
