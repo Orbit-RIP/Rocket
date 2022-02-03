@@ -15,7 +15,7 @@
             <artifactId>spigot-server</artifactId>
             <version>1.7.10-R0.1-SNAPSHOT</version>
             <scope>system</scope>
-            <systemPath>lib</systemPath>
+            <systemPath>${project.basedir}/lib/mspigot.jar</systemPath>
         </dependency>
 
         <dependency>
@@ -23,7 +23,7 @@
             <artifactId>proton</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>system</scope>
-            <systemPath>libT.jar</systemPath>
+            <systemPath>${project.basedir}/lib/proton-1.0-SNAPSHOT.jar</systemPath>
         </dependency>
 
         <dependency>
@@ -37,7 +37,7 @@
             <artifactId>neutron</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>system</scope>
-            <systemPath>libOT.jar</systemPath>
+            <systemPath>${project.basedir}/lib/neutron-1.0-SNAPSHOT.jar</systemPath>
         </dependency>
 
     </dependencies>
