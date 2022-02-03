@@ -1,5 +1,5 @@
-name: Piston
-main: cc.fyre.piston.Piston
+name: Rocket
+main: rip.orbit.rocket.Rocket
 version: 1.0-SNAPSHOT
-author: Alfie
+author: Alfie, LbuddyB0y, Branched
 depend: [Proton]
