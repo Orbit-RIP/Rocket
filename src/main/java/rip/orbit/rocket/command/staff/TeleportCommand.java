@@ -1,6 +1,6 @@
 package rip.orbit.rocket.command.staff;
 
-import cc.fyre.neutron.NeutronConstants;
+import rip.orbit.nebula.NebulaConstants;
 import rip.orbit.rocket.Rocket;
 import cc.fyre.proton.command.Command;
 import cc.fyre.proton.command.flag.Flag;
@@ -32,7 +32,7 @@ public class TeleportCommand {
 
         player.sendMessage(ChatColor.GREEN + "Teleporting " + ChatColor.WHITE + target.getDisplayName() + ChatColor.GREEN + " to you.");
 
-        if (!silent || target.hasPermission(NeutronConstants.STAFF_PERMISSION)) {
+        if (!silent || target.hasPermission(NebulaConstants.STAFF_PERMISSION)) {
             target.sendMessage(ChatColor.GREEN + "Teleporting you to " + ChatColor.WHITE + player.getDisplayName() + ChatColor.GREEN + ".");
         }
 

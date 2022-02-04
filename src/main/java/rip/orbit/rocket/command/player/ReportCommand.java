@@ -1,7 +1,7 @@
 package rip.orbit.rocket.command.player;
 
-import cc.fyre.neutron.NeutronConstants;
-import cc.fyre.neutron.util.FormatUtil;
+import rip.orbit.nebula.NebulaConstants;
+import rip.orbit.nebula.util.FormatUtil;
 import rip.orbit.rocket.Rocket;
 import rip.orbit.rocket.packet.StaffBroadcastPacket;
 import rip.orbit.rocket.util.Cooldown;
@@ -27,7 +27,7 @@ public class ReportCommand {
 
         Rocket.getInstance().getReportCooldownCache().put(player.getUniqueId(),new Cooldown(60_000L));
 
-        Proton.getInstance().getPidginHandler().sendPacket(new StaffBroadcastPacket(NeutronConstants.STAFF_PERMISSION,ChatColor.GOLD + "[" + ChatColor.GOLD + "Report" + ChatColor.GOLD + "]" +
+        Proton.getInstance().getPidginHandler().sendPacket(new StaffBroadcastPacket(NebulaConstants.STAFF_PERMISSION,ChatColor.GOLD + "[" + ChatColor.GOLD + "Report" + ChatColor.GOLD + "]" +
                ChatColor.GRAY + " (" + ChatColor.YELLOW + Bukkit.getServerName() + ChatColor.GRAY + ") " + player.getDisplayName() + ChatColor.GRAY + " has reported " + target.getDisplayName() + ChatColor.GRAY + ": " + ChatColor.GOLD + reason)
         );
     }

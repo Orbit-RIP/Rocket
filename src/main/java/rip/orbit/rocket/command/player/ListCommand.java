@@ -1,7 +1,7 @@
 package rip.orbit.rocket.command.player;
 
-import cc.fyre.neutron.Neutron;
-import cc.fyre.neutron.rank.Rank;
+import rip.orbit.nebula.Nebula;
+import rip.orbit.nebula.rank.Rank;
 import rip.orbit.rocket.Rocket;
 import cc.fyre.proton.Proton;
 import cc.fyre.proton.command.Command;
@@ -23,7 +23,7 @@ public class ListCommand {
     )
     public static void execute(CommandSender sender) {
 
-        sender.sendMessage(StringUtils.join(Neutron.getInstance().getRankHandler().getSortedValueCache()
+        sender.sendMessage(StringUtils.join(Nebula.getInstance().getRankHandler().getSortedValueCache()
                 .stream()
                 .map(Rank::getFancyName)
                 .collect(Collectors.toList()), new StringBuilder().append(ChatColor.WHITE).append(", ").toString())
@@ -58,7 +58,7 @@ public class ListCommand {
 
         @Override
         public int compare(Player player,Player otherPlayer) {
-            return Integer.compare(Neutron.getInstance().getProfileHandler().fromUuid(player.getUniqueId()).getActiveGrant().getRank().getWeight().get(),Neutron.getInstance().getProfileHandler().fromUuid(otherPlayer.getUniqueId()).getActiveGrant().getRank().getWeight().get());
+            return Integer.compare(Nebula.getInstance().getProfileHandler().fromUuid(player.getUniqueId()).getActiveGrant().getRank().getWeight().get(),Nebula.getInstance().getProfileHandler().fromUuid(otherPlayer.getUniqueId()).getActiveGrant().getRank().getWeight().get());
         }
     }
 

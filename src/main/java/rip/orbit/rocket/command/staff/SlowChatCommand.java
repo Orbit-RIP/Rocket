@@ -1,6 +1,6 @@
 package rip.orbit.rocket.command.staff;
 
-import cc.fyre.neutron.NeutronConstants;
+import rip.orbit.nebula.NebulaConstants;
 import rip.orbit.rocket.Rocket;
 import cc.fyre.proton.command.Command;
 import cc.fyre.proton.command.param.Parameter;
@@ -19,7 +19,7 @@ public class SlowChatCommand {
     )
     public static void execute(CommandSender sender,@Parameter(name = "seconds",defaultValue = "5")int seconds) {
 
-        final String displayName = sender instanceof Player ? ((Player)sender).getName(): NeutronConstants.CONSOLE_NAME;
+        final String displayName = sender instanceof Player ? ((Player)sender).getName(): NebulaConstants.CONSOLE_NAME;
 
         if (Rocket.getInstance().getChatHandler().getSlowTime() > 0) {
             Rocket.getInstance().getChatHandler().setSlowTime(0);

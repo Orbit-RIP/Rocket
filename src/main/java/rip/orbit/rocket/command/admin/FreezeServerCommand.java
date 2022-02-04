@@ -1,6 +1,6 @@
 package rip.orbit.rocket.command.admin;
 
-import cc.fyre.neutron.NeutronConstants;
+import rip.orbit.nebula.NebulaConstants;
 import rip.orbit.rocket.Rocket;
 
 import cc.fyre.proton.command.Command;
@@ -19,7 +19,7 @@ public class FreezeServerCommand {
 
         Rocket.getInstance().getServer().getOnlinePlayers().forEach(loopPlayer -> {
 
-            if (!loopPlayer.hasPermission(NeutronConstants.STAFF_PERMISSION)) {
+            if (!loopPlayer.hasPermission(NebulaConstants.STAFF_PERMISSION)) {
                 loopPlayer.sendMessage(ChatColor.RED.toString() + ChatColor.BOLD + "The server has been " + (Rocket.getInstance().getServerHandler().isFrozen() ? "" : "un") + "frozen.");
             } else {
                 loopPlayer.sendMessage(ChatColor.RED.toString() + ChatColor.BOLD + "The server has been " + (Rocket.getInstance().getServerHandler().isFrozen() ? "" : "un") + "frozen by " + sender.getName() + ".");

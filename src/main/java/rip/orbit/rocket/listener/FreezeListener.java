@@ -1,6 +1,6 @@
 package rip.orbit.rocket.listener;
 
-import cc.fyre.neutron.NeutronConstants;
+import rip.orbit.nebula.NebulaConstants;
 import rip.orbit.rocket.Rocket;
 import rip.orbit.rocket.RocketConstants;
 import org.bukkit.ChatColor;
@@ -46,7 +46,7 @@ public class FreezeListener implements Listener {
 
         for (Player loopPlayer : Rocket.getInstance().getServer().getOnlinePlayers()) {
 
-            if (!loopPlayer.hasPermission(NeutronConstants.STAFF_PERMISSION)) {
+            if (!loopPlayer.hasPermission(NebulaConstants.STAFF_PERMISSION)) {
                 continue;
             }
 

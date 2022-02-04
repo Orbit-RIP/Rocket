@@ -33,11 +33,11 @@
         </dependency>
 
         <dependency>
-            <groupId>cc.fyre.neutron</groupId>
-            <artifactId>neutron</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>rip.orbit.nebula</groupId>
+            <artifactId>nebula</artifactId>
+            <version>1.1-DEV</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/neutron-1.0-SNAPSHOT.jar</systemPath>
+            <systemPath>${project.basedir}/lib/Nebula-1.1-DEV.jar</systemPath>
         </dependency>
 
     </dependencies>

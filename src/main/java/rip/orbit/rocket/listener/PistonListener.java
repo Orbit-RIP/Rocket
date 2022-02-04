@@ -1,7 +1,7 @@
 package rip.orbit.rocket.listener;
 
-import cc.fyre.neutron.Neutron;
-import cc.fyre.neutron.NeutronConstants;
+import rip.orbit.nebula.Nebula;
+import rip.orbit.nebula.NebulaConstants;
 import rip.orbit.rocket.Rocket;
 import rip.orbit.rocket.packet.StaffBroadcastPacket;
 import cc.fyre.proton.Proton;
@@ -29,11 +29,11 @@ public class PistonListener implements Listener {
     public void onJoin(PlayerJoinEvent event) {
         final Player player = event.getPlayer();
 
-        if (!player.hasPermission(NeutronConstants.STAFF_PERMISSION)) {
+        if (!player.hasPermission(NebulaConstants.STAFF_PERMISSION)) {
             return;
         }
 
-        Rocket.getInstance().getServer().getScheduler().runTaskLater(Rocket.getInstance(), () -> Proton.getInstance().getPidginHandler().sendPacket(new StaffBroadcastPacket(NeutronConstants.STAFF_PERMISSION,
+        Rocket.getInstance().getServer().getScheduler().runTaskLater(Rocket.getInstance(), () -> Proton.getInstance().getPidginHandler().sendPacket(new StaffBroadcastPacket(NebulaConstants.STAFF_PERMISSION,
                 ChatColor.translateAlternateColorCodes('&', "&6[Staff] " + player.getDisplayName() + " &7has joined the server &e" + Bukkit.getServerName() + "&7."))
         ), 20L);
     }
@@ -42,11 +42,11 @@ public class PistonListener implements Listener {
     public void onQuit(PlayerQuitEvent event) {
         final Player player = event.getPlayer();
 
-        if (!player.hasPermission(NeutronConstants.STAFF_PERMISSION)) {
+        if (!player.hasPermission(NebulaConstants.STAFF_PERMISSION)) {
             return;
         }
 
-        Proton.getInstance().getPidginHandler().sendPacket(new StaffBroadcastPacket(NeutronConstants.STAFF_PERMISSION,
+        Proton.getInstance().getPidginHandler().sendPacket(new StaffBroadcastPacket(NebulaConstants.STAFF_PERMISSION,
                 ChatColor.translateAlternateColorCodes('&', "&6[Staff] " + player.getDisplayName() + " &7has left the server &e" + Bukkit.getServerName() + "&7."))
         );
     }
@@ -54,7 +54,7 @@ public class PistonListener implements Listener {
     @EventHandler(priority = EventPriority.NORMAL)
     public void onSignChange(SignChangeEvent event) {
 
-        if (!event.getPlayer().hasPermission(NeutronConstants.ADMIN_PERMISSION)) {
+        if (!event.getPlayer().hasPermission(NebulaConstants.ADMIN_PERMISSION)) {
             return;
         }
 
@@ -87,7 +87,7 @@ public class PistonListener implements Listener {
 
             final UUID uuid = UUIDUtils.uuid(skull.getOwner());
 
-            event.getPlayer().sendMessage(ChatColor.GREEN + "This is the head of: " + (uuid == null ? ChatColor.WHITE + skull.getOwner():Neutron.getInstance().getProfileHandler().fromUuid(uuid,true).getFancyName()));
+            event.getPlayer().sendMessage(ChatColor.GREEN + "This is the head of: " + (uuid == null ? ChatColor.WHITE + skull.getOwner():Nebula.getInstance().getProfileHandler().fromUuid(uuid,true).getFancyName()));
         } catch (NullPointerException ignored) {}
 
     }
@@ -102,7 +102,7 @@ public class PistonListener implements Listener {
             return;
         }
 
-        if (player.hasPermission(NeutronConstants.STAFF_PERMISSION)) {
+        if (player.hasPermission(NebulaConstants.STAFF_PERMISSION)) {
             Rocket.getInstance().getBackCache().put(player.getUniqueId(), event.getFrom());
         }
 
@@ -113,7 +113,7 @@ public class PistonListener implements Listener {
 
         final Player player = event.getEntity();
 
-        if (player.hasPermission(NeutronConstants.STAFF_PERMISSION)) {
+        if (player.hasPermission(NebulaConstants.STAFF_PERMISSION)) {
             Rocket.getInstance().getBackCache().put(player.getUniqueId(),player.getLocation());
         }
 

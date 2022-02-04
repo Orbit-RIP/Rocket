@@ -1,6 +1,6 @@
 package rip.orbit.rocket.chat;
 
-import cc.fyre.neutron.NeutronConstants;
+import rip.orbit.nebula.NebulaConstants;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -110,7 +110,7 @@ public class ChatHandler implements Listener {
 
         final Player player = event.getPlayer();
 
-        if (player.hasPermission(NeutronConstants.STAFF_PERMISSION) || player.hasPermission("piston.chat.bypass"))  {
+        if (player.hasPermission(NebulaConstants.STAFF_PERMISSION) || player.hasPermission("piston.chat.bypass"))  {
             return;
         }
 
@@ -133,12 +133,12 @@ public class ChatHandler implements Listener {
             return;
         }
 
-        if (!player.hasPermission("neutron.staff")) {
+        if (!player.hasPermission("Nebula.staff")) {
             String msg = event.getMessage().toLowerCase();
             if (this.isFiltered(msg)) {
-                Rocket.getInstance().getServer().getOnlinePlayers().stream().filter(it -> it.hasPermission("neutron.staff")).forEach(it -> it.sendMessage(ChatColor.translateAlternateColorCodes('&', "&c[Filtered] &f" + NeutronConstants.formatChatDisplay(player, msg))));
+                Rocket.getInstance().getServer().getOnlinePlayers().stream().filter(it -> it.hasPermission("Nebula.staff")).forEach(it -> it.sendMessage(ChatColor.translateAlternateColorCodes('&', "&c[Filtered] &f" + NebulaConstants.formatChatDisplay(player, msg))));
 
-                player.sendMessage(NeutronConstants.formatChatDisplay(player, msg));
+                player.sendMessage(NebulaConstants.formatChatDisplay(player, msg));
                 event.setCancelled(true);
                 return;
             }

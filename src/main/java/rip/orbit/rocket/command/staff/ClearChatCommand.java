@@ -1,6 +1,6 @@
 package rip.orbit.rocket.command.staff;
 
-import cc.fyre.neutron.NeutronConstants;
+import rip.orbit.nebula.NebulaConstants;
 import rip.orbit.rocket.Rocket;
 import cc.fyre.proton.command.Command;
 import org.bukkit.ChatColor;
@@ -15,11 +15,11 @@ public class ClearChatCommand {
     )
     public static void execute(CommandSender sender) {
 
-        final String displayName = sender instanceof Player ? ((Player)sender).getDisplayName(): NeutronConstants.CONSOLE_NAME;
+        final String displayName = sender instanceof Player ? ((Player)sender).getDisplayName(): NebulaConstants.CONSOLE_NAME;
 
         for (Player loopPlayer : Rocket.getInstance().getServer().getOnlinePlayers()) {
 
-            if (loopPlayer.hasPermission(NeutronConstants.STAFF_PERMISSION)) {
+            if (loopPlayer.hasPermission(NebulaConstants.STAFF_PERMISSION)) {
                 loopPlayer.sendMessage(ChatColor.GREEN + "The chat has been cleared by a staff member");
                 continue;
             }
