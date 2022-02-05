@@ -12,7 +12,7 @@ public class UptimeCommand {
 
     @Command(
             names = {"uptime"},
-            permission = "piston.command.uptime"
+            permission = "orbit.headstaff"
     )
     public static void execute(CommandSender sender) {
 

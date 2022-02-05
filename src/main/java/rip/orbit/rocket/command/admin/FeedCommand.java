@@ -8,7 +8,7 @@ public class FeedCommand {
 
     @Command(
             names = {"feed"},
-            permission = "piston.command.feed"
+            permission = "orbit.staff"
     )
     public static void execute(Player player,@Parameter(name = "player",defaultValue = "self") Player target) {
         target.setFoodLevel(20);

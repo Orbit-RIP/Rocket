@@ -10,7 +10,7 @@ public class BroadcastCommand {
 
     @Command(
             names = {"broadcast","bc","raw"},
-            permission = "piston.command.raw"
+            permission = "orbit.headstaff"
     )
     public static void execute(CommandSender sender,@Parameter(name = "message",wildcard = true)String message) {
         Rocket.getInstance().getServer().broadcastMessage(ChatColor.translateAlternateColorCodes('&',message));

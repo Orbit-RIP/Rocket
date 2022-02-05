@@ -8,7 +8,7 @@ public class ExtinguishCommand {
 
     @Command(
             names = {"extinguish","ext"},
-            permission = "piston.command.extinguish"
+            permission = "orbit.admin"
     )
     public static void execute(Player player,@Parameter(name = "player") Player target) {
         target.setFireTicks(0);

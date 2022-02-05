@@ -11,7 +11,7 @@ public class SetSlotsCommand {
 
     @Command(
             names = {"setslots", "setmaxslots", "setservercap", "ssc"},
-            permission = "piston.command.setslots"
+            permission = "op"
     )
     public static void execute(CommandSender sender,@Parameter(name = "slots") int slots) {
 

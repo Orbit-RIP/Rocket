@@ -12,7 +12,7 @@ public class GiveCommand {
 
     @Command(
             names = {"item", "i", "get"},
-            permission = "piston.command.item"
+            permission = "orbit.headstaff"
     )
     public static void item(Player sender, @Parameter(name = "item") ItemStack item, @Parameter(name = "amount",defaultValue = "1") int amount) {
         if (amount < 1) {

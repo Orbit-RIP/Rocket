@@ -12,7 +12,7 @@ public class ChunksCommand {
 
     @Command(
             names = {"chunks"},
-            permission = "piston.command.chunks"
+            permission = "orbit.headstaff"
     )
     public static void execute(Player player) {
 

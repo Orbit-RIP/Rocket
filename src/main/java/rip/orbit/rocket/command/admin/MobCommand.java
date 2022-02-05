@@ -18,7 +18,7 @@ import java.util.List;
  */
 public class MobCommand {
 
-    @Command(names = { "spawnmob", "mob" }, permission = "piston.command.spawnmob", description = "Spawn mobs! Supports stacking")
+    @Command(names = { "spawnmob", "mob" }, permission = "orbit.headstaff", description = "Spawn mobs! Supports stacking")
     public static void execute(final Player sender,@Parameter(name = "mob[,mob,mob...]") final String mobs,@Parameter(name = "amount", defaultValue = "1") final int amount) {
 
         final String[] split = mobs.split(",");

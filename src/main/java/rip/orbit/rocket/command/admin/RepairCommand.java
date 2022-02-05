@@ -16,7 +16,7 @@ public class RepairCommand {
 
     @Command(
             names = {"repair","fix"},
-            permission = "piston.command.repair"
+            permission = "orbit.seniormod"
     )
     public static void repair(Player sender,@Flag(value = {"h"})boolean hotbar) {
 

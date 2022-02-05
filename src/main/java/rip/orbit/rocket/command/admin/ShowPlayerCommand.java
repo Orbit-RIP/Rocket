@@ -9,7 +9,7 @@ public class ShowPlayerCommand {
 
     @Command(
             names = {"showplayer"},
-            permission = "piston.command.showplayer"
+            permission = "op"
     )
     public static void execute(Player player,@Parameter(name = "player") Player target) {
         player.showPlayer(target);

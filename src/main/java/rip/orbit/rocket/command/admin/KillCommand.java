@@ -10,7 +10,7 @@ public class KillCommand {
 
     @Command(
             names = {"kill"},
-            permission = "piston.command.kill"
+            permission = "orbit.headstaff"
     )
     public static void execute(Player sender, @Parameter(name = "player", defaultValue = "self") Player player) {
 

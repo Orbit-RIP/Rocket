@@ -11,7 +11,7 @@ public class ClearChatCommand {
 
     @Command(
             names = {"clearchat","CC"},
-            permission = "piston.command.clearchat"
+            permission = "orbit.staff"
     )
     public static void execute(CommandSender sender) {
 

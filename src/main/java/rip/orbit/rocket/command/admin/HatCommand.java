@@ -8,7 +8,7 @@ public class HatCommand {
 
     @Command(
             names = {"hat"},
-            permission = "piston.command.hat"
+            permission = "orbit.donator"
     )
     public static void execute(Player player) {
 

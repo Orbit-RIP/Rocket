@@ -7,7 +7,7 @@ public class CraftCommand {
 
     @Command(
             names = {"craft","workbench"},
-            permission = "piston.command.craft"
+            permission = "orbit.donator"
     )
     public static void execute(Player player) {
         player.openWorkbench(player.getLocation(),true);

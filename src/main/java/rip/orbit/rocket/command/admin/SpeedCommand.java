@@ -8,8 +8,8 @@ import org.bukkit.entity.Player;
 public class SpeedCommand {
 
     @Command(
-            names = {"espeed"},
-            permission = "piston.command.speed"
+            names = {"espeed", "speed"},
+            permission = "orbit.staff"
     )
     public static void speed(Player sender,@Parameter(name = "speed",defaultValue = "1") int speed,@Parameter(name = "player",defaultValue = "self")Player player) {
 

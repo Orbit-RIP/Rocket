@@ -10,7 +10,7 @@ public class MessageRawCommand {
 
     @Command(
             names = {"messageraw","msgraw"},
-            permission = "piston.command.messageraw"
+            permission = "orbit.headstaff"
     )
     public static void execute(CommandSender sender,@Parameter(name = "player") Player player,@Parameter(name = "message",wildcard = true) String message) {
         player.sendMessage(ChatColor.translateAlternateColorCodes('&',message));

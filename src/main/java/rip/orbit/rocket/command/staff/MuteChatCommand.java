@@ -11,7 +11,7 @@ public class MuteChatCommand {
 
     @Command(
             names = {"mutechat","mc"},
-            permission = "piston.command.mutechat"
+            permission = "orbit.mod+"
     )
     public static void execute(CommandSender sender) {
 

@@ -7,7 +7,7 @@ import org.bukkit.entity.Player;
 
 public class InvseeCommand {
 
-    @Command(names = { "invsee" }, permission = "basic.invsee", description = "Open a player's inventory")
+    @Command(names = { "invsee" }, permission = "orbit.staff", description = "Open a player's inventory")
     public static void invsee(Player sender, @Parameter(name = "player")Player target) {
 
         if (sender.equals(target)) {

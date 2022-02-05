@@ -14,7 +14,7 @@ public class EnchantCommand {
 
     @Command(
             names = {"enchant"},
-            permission = "piston.command.enchant"
+            permission = "orbit.admin"
     )
     public static void execute(Player player,@Parameter(name = "enchantment") Enchantment enchantment,@Parameter(name = "level") int level,@Flag(value = "h")boolean hotbar) {
 

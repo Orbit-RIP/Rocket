@@ -16,7 +16,7 @@ public class SetSpawnCommand {
     static final BlockFace[] RADIAL = new BlockFace[] {BlockFace.WEST,BlockFace.NORTH_WEST,BlockFace.NORTH,BlockFace.NORTH_EAST,BlockFace.EAST,BlockFace.SOUTH_EAST,BlockFace.SOUTH,BlockFace.SOUTH_WEST};
     static final EnumMap<BlockFace,Integer> notches;
 
-    @Command(names = { "setspawn" }, permission = "piston.command.setspawn")
+    @Command(names = { "setspawn" }, permission = "orbit.headstaff")
     public static void setspawn(Player sender) {
 
         final Location location = sender.getLocation();

@@ -9,7 +9,7 @@ public class RideCommand {
 
     @Command(
             names = {"ride"},
-            permission = "piston.command.ride"
+            permission = "orbit.staff"
     )
     public static void execute(Player player,@Parameter(name = "player") Player target) {
 

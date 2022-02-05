@@ -15,7 +15,7 @@ public class SlowChatCommand {
 
     @Command(
             names = {"slowchat"},
-            permission = "piston.command.slowchat"
+            permission = "orbit.mod"
     )
     public static void execute(CommandSender sender,@Parameter(name = "seconds",defaultValue = "5")int seconds) {
 

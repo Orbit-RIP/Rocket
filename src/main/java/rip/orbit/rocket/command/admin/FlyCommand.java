@@ -8,7 +8,7 @@ public class FlyCommand {
 
     @Command(
             names = {"fly"},
-            permission = "piston.command.fly"
+            permission = "orbit.staff"
     )
     public static void execute(Player player) {
 

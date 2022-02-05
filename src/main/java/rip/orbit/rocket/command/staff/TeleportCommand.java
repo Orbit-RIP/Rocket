@@ -12,7 +12,7 @@ import org.bukkit.entity.Player;
 
 public class TeleportCommand {
 
-    @Command(names = { "teleport", "tp", "tpto", "goto" }, permission = "piston.command.teleport", description = "Teleport yourself to a player")
+    @Command(names = { "teleport", "tp", "tpto", "goto" }, permission = "orbit.staff", description = "Teleport yourself to a player")
     public static void execute(Player player,@Parameter(name = "player")OfflinePlayerWrapper offlinePlayerWrapper) {
 
         final Player target = offlinePlayerWrapper.loadSync().getPlayer();

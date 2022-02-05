@@ -12,7 +12,7 @@ public class RenameCommand {
 
     @Command(
             names = {"rename"},
-            permission = "piston.command.rename"
+            permission = "orbit.donator"
     )
     public static void execute(Player player,@Parameter(name = "name",wildcard = true)String name) {
 

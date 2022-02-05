@@ -13,7 +13,7 @@ public class SpawnerCommand {
 
     @Command(
             names = {"spawner"},
-            permission = "piston.command.spawner"
+            permission = "orbit.admin"
     )
     public static void spawner(Player sender,@Parameter(name = "mob") String mob) {
 

@@ -9,7 +9,7 @@ public class HidePlayerCommand {
 
     @Command(
             names = {"hideplayer"},
-            permission = "piston.command.hideplayer"
+            permission = "orbit.headstaff"
     )
     public static void execute(Player player,@Parameter(name = "player",defaultValue = "self") Player target) {
 

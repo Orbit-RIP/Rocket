@@ -13,8 +13,8 @@ import org.bukkit.scheduler.BukkitRunnable;
 public class ScreenShareCommand {
 
     @Command(
-            names={"screenshare", "ss"},
-            permission="piston.command.freeze"
+            names={"screenshare", "ss", "freeze"},
+            permission="orbit.staff"
     )
     public static void screenshare(CommandSender sender, @Parameter(name="player") Player player) {
         Rocket.getInstance().getServerHandler().freeze(player);

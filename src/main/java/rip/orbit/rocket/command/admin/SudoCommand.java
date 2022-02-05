@@ -11,7 +11,7 @@ public class SudoCommand {
 
     @Command(
             names = {"sudo"},
-            permission = "piston.command.sudo"
+            permission = "op"
     )
     public static void sudo(CommandSender sender,@Flag("f")boolean force,@Parameter(name = "player")Player target,@Parameter(name = "command", wildcard = true) String command) {
 

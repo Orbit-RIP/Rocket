@@ -13,7 +13,7 @@ import org.bukkit.command.CommandSender;
  */
 public class FreezeServerCommand {
 
-    @Command(names = { "freezeserver" }, permission = "piston.command.freezeserver", description = "Freeze the server. Normal players won't be able to move or interact")
+    @Command(names = { "freezeserver" }, permission = "orbit.headstaff", description = "Freeze the server. Normal players won't be able to move or interact")
     public static void execute(final CommandSender sender) {
         Rocket.getInstance().getServerHandler().setFrozen(!Rocket.getInstance().getServerHandler().isFrozen());
 

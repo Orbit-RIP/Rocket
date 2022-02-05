@@ -10,7 +10,7 @@ public class GamemodeCommand {
 
     @Command(
             names = {"gamemode", "gm"},
-            permission = "piston.command.gamemode"
+            permission = "orbit.seniormod"
     )
     public static void execute(Player player,@Parameter(name = "gamemode",defaultValue = "1") GameMode gameMode,@Parameter(name = "player",defaultValue = "self") Player target) {
 

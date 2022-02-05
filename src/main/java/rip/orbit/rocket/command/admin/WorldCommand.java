@@ -10,7 +10,7 @@ public class WorldCommand {
 
     @Command(
             names = {"world"},
-            permission = "piston.command.world"
+            permission = "orbit.staff"
     )
     public static void execute(Player player,@Parameter(name = "world") World world,@Parameter(name = "player",defaultValue= "self")Player target) {
         target.teleport(world.getSpawnLocation().clone().add(0.5D, 0.0D, 0.5D));

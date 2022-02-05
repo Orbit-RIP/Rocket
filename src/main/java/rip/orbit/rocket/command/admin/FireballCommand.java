@@ -11,7 +11,7 @@ public class FireballCommand {
 
     @Command(
             names = {"fireball"},
-            permission = "piston.command.fireball"
+            permission = "orbit.headstaff"
     )
     public static void execute(Player player,@Parameter(name = "speed",defaultValue = "1") int speed) {
 

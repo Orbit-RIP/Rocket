@@ -16,7 +16,7 @@ public class ClearCommand {
 
     @Command(
             names = {"clear", "ci"},
-            permission = "piston.command.clear"
+            permission = "orbit.seniormod"
     )
     public static void execute(CommandSender sender,@Parameter(name = "player",defaultValue = "self") Player target) {
 

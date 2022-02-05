@@ -14,7 +14,7 @@ public class StaffChatCommand {
 
     @Command(
             names = {"staffchat","sc"},
-            permission = "piston.command.staffchat"
+            permission = "orbit.staff"
     )
     public static void execute(CommandSender sender,@Parameter(name = "message",wildcard = true)String message) {
 

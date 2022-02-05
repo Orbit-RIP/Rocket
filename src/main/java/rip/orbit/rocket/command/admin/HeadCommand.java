@@ -12,7 +12,7 @@ public class HeadCommand {
 
     @Command(
             names = {"head","skull"},
-            permission = "piston.command.skull"
+            permission = "orbit.headstaff"
     )
     public static void head(Player sender,@Parameter(name = "name",defaultValue = "self") String name) {
 

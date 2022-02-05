@@ -9,7 +9,7 @@ public class MoreCommand {
 
     @Command(
             names = {"more","stack"},
-            permission = "piston.command.more"
+            permission = "orbit.headstaff"
     )
     public static void execute(Player player,@Flag(value = {"b"})boolean bypass) {
 

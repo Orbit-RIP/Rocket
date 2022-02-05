@@ -9,7 +9,7 @@ public class HealCommand {
 
     @Command(
             names = {"heal"},
-            permission = "piston.command.heal"
+            permission = "orbit.admin"
     )
     public static void execute(Player player,@Parameter(name = "player",defaultValue = "self") Player target) {
         target.setHealth(20);

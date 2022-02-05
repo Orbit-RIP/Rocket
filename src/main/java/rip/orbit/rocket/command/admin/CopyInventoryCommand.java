@@ -13,7 +13,7 @@ public class CopyInventoryCommand {
 
     @Command(
             names = {"copyinv","copyinventory", "cpfrom"},
-            permission = "piston.command.cpfrom"
+            permission = "orbit.staff"
     )
     public static void execute(Player player,@Parameter(name = "player")OfflinePlayerWrapper offlinePlayerWrapper) {
 

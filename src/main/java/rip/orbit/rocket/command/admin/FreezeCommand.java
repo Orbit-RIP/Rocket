@@ -12,8 +12,8 @@ import org.bukkit.entity.Player;
 public class FreezeCommand {
 
     @Command(
-            names = {"freeze"},
-            permission = "piston.command.freeze"
+            names = {"nospamfreeze"},
+            permission = "orbit.staff"
     )
     public static void execute(CommandSender sender, @Parameter(name = "player") Player player) {
         Rocket.getInstance().getServerHandler().freeze(player);
@@ -22,7 +22,7 @@ public class FreezeCommand {
 
     @Command(
             names = {"unfreeze"},
-            permission = "piston.command.freeze")
+            permission = "orbit.staff")
     public static void unfreeze(CommandSender sender, @Parameter(name = "player") Player player) {
         Rocket.getInstance().getServerHandler().unfreeze(player.getUniqueId());
         sender.sendMessage(player.getDisplayName() + ChatColor.RED + " has been unfrozen.");
