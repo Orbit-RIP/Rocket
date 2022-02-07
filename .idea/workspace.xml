@@ -5,51 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57be9090-1f35-466f-87d0-b862c6e3e6ca" name="Changes" comment="changed buddylib">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/piston.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/BroadcastCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/BroadcastCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/ChunksCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/ChunksCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/ClearCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/ClearCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/CopyInventoryCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/CopyInventoryCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/CraftCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/CraftCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/EnchantCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/EnchantCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/ExtinguishCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/ExtinguishCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/FeedCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/FeedCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/FireballCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/FireballCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/FlyCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/FlyCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/FreezeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/FreezeCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/FreezeServerCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/FreezeServerCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/GamemodeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/GamemodeCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/GiveCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/GiveCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/HatCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/HatCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/HeadCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/HeadCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/HealCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/HealCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/HidePlayerCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/HidePlayerCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/InvseeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/InvseeCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/KillCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/KillCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/MessageRawCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/MessageRawCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/MobCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/MobCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/MoreCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/MoreCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/RenameCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/RenameCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/RepairCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/RepairCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/RideCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/RideCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/ScreenShareCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/ScreenShareCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/SetSlotsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/SetSlotsCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/SetSpawnCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/SetSpawnCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/ShowPlayerCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/ShowPlayerCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/SpawnerCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/SpawnerCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/SpeedCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/SpeedCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/SudoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/SudoCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/TopCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/TopCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/UptimeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/UptimeCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/WorldCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/admin/WorldCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/staff/ClearChatCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/staff/ClearChatCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/staff/MuteChatCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/staff/MuteChatCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/staff/SlowChatCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/staff/SlowChatCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/staff/StaffChatCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/staff/StaffChatCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/staff/TeleportCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/command/staff/TeleportCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Rocket-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Rocket-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-Rocket-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-Rocket-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/chat/ChatHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/rocket/chat/ChatHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +18,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="4" />
@@ -150,6 +118,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="changed buddylib" />

@@ -31,7 +31,7 @@ public class ChatHandler implements Listener {
     @Getter @Setter private int slowTime = 0;
     @Getter @Setter private boolean muted = false;
 
-    @Getter @Setter private String punishmentCommand = "ban {player} -s 1d Spam (Piston ChatHandler)";
+    @Getter @Setter private String punishmentCommand = "ban {player} -s 1d Spam (Rocket ChatHandler)";
     @Getter @Setter private String inappropriateCommand = "mute {player} -s {duration} Inappropriate content.";
 
     @Getter @Setter private Map<UUID,Long> slowCache = new HashMap<>();
@@ -70,11 +70,11 @@ public class ChatHandler implements Listener {
         this.ipFilter = Pattern.compile("^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])([.,])){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$");
 
         this.tier1Filter = Arrays.asList(
-                "retard", "sage", "hcrival", "rival", "arcane", "velt", "viper", "faithful", "faggot", "hassan", "static", "bomber"
+                "retard", "sage", "cavepvp", "cave", "arcane", "velt", "viper", "faithful", "faggot", "static"
         );
 
         this.tier2Filter = Arrays.asList(
-                "slut", "retarded", "autistic", "autism", "garbage", "L", "beaner", "kys", "kill yourself"
+                "slut", "retarded", "autistic", "autism", "beaner", "kys", "kill yourself"
         );
 
         this.tier3Filter = Arrays.asList(
@@ -82,7 +82,7 @@ public class ChatHandler implements Listener {
         );
 
         this.linkWhitelist = Arrays.asList(
-                "orbit.rip", "forums.orbit.rip", "twitch.tv",
+                "orbit.rip", "discord.orbit.rip", "twitch.tv",
                 "youtube.com", "youtu.be", "discord.gg", "twitter.com",
                 "prnt.sc", "gyazo.com", "imgur.com");
 
@@ -110,7 +110,7 @@ public class ChatHandler implements Listener {
 
         final Player player = event.getPlayer();
 
-        if (player.hasPermission(NebulaConstants.STAFF_PERMISSION) || player.hasPermission("piston.chat.bypass"))  {
+        if (player.hasPermission(NebulaConstants.STAFF_PERMISSION) || player.hasPermission("rocket.chat.bypass"))  {
             return;
         }
 

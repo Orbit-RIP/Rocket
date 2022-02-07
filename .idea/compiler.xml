@@ -11,5 +11,8 @@
         <module name="piston" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="piston" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
