@@ -29,8 +29,6 @@ public class ServerHandler {
 
         player.setMetadata(RocketConstants.FREEZE_METADATA,new FixedMetadataValue(Proton.getInstance(),true));
 
-        player.sendMessage(ChatColor.RED + "You have been frozen by a staff member.");
-
         this.instance.getServer().getScheduler().runTaskLater(Proton.getInstance(),() -> this.unfreeze(player.getUniqueId()), 20L * TimeUnit.HOURS.toSeconds(2L));
 
         final Location location = player.getLocation();
@@ -54,6 +52,20 @@ public class ServerHandler {
         location.setY(location.getBlockY());
 
         player.teleport(location.add(0.0,1.0,0.0));
+    }
+
+    private void sendDangerSign(Player player, String ... args) {
+        String[] lines = new String[]{"", "", "", "", "", "", ""};
+        System.arraycopy(args, 0, lines, 0, args.length);
+        player.sendMessage(ChatColor.WHITE + "\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588" + ChatColor.RESET);
+        player.sendMessage(ChatColor.WHITE + "\u2588\u2588\u2588\u2588" + ChatColor.RED + "\u2588" + ChatColor.WHITE + "\u2588\u2588\u2588\u2588" + ChatColor.RESET + (lines[0].isEmpty() ? "" : new StringBuilder().append(" ").append(lines[0]).toString()));
+        player.sendMessage(ChatColor.WHITE + "\u2588\u2588\u2588" + ChatColor.RED + "\u2588" + ChatColor.GOLD + "\u2588" + ChatColor.RED + "\u2588" + ChatColor.WHITE + "\u2588\u2588\u2588" + ChatColor.RESET + (lines[1].isEmpty() ? "" : new StringBuilder().append(" ").append(lines[1]).toString()));
+        player.sendMessage(ChatColor.WHITE + "\u2588\u2588" + ChatColor.RED + "\u2588" + ChatColor.GOLD + "\u2588" + ChatColor.BLACK + "\u2588" + ChatColor.GOLD + "\u2588" + ChatColor.RED + "\u2588" + ChatColor.WHITE + "\u2588\u2588" + ChatColor.RESET + (lines[2].isEmpty() ? "" : new StringBuilder().append(" ").append(lines[2]).toString()));
+        player.sendMessage(ChatColor.WHITE + "\u2588\u2588" + ChatColor.RED + "\u2588" + ChatColor.GOLD + "\u2588" + ChatColor.BLACK + "\u2588" + ChatColor.GOLD + "\u2588" + ChatColor.RED + "\u2588" + ChatColor.WHITE + "\u2588\u2588" + ChatColor.RESET + (lines[3].isEmpty() ? "" : new StringBuilder().append(" ").append(lines[3]).toString()));
+        player.sendMessage(ChatColor.WHITE + "\u2588" + ChatColor.RED + "\u2588" + ChatColor.GOLD + "\u2588\u2588" + ChatColor.BLACK + "\u2588" + ChatColor.GOLD + "\u2588\u2588" + ChatColor.RED + "\u2588" + ChatColor.WHITE + "\u2588" + ChatColor.RESET + (lines[4].isEmpty() ? "" : new StringBuilder().append(" ").append(lines[4]).toString()));
+        player.sendMessage(ChatColor.WHITE + "\u2588" + ChatColor.RED + "\u2588" + ChatColor.GOLD + "\u2588\u2588\u2588\u2588\u2588" + ChatColor.RED + "\u2588" + ChatColor.WHITE + "\u2588" + ChatColor.RESET + (lines[5].isEmpty() ? "" : new StringBuilder().append(" ").append(lines[5]).toString()));
+        player.sendMessage(ChatColor.RED + "\u2588" + ChatColor.GOLD + "\u2588\u2588\u2588" + ChatColor.BLACK + "\u2588" + ChatColor.GOLD + "\u2588\u2588\u2588" + ChatColor.RED + "\u2588" + ChatColor.RESET + (lines[6].isEmpty() ? "" : new StringBuilder().append(" ").append(lines[6]).toString()));
+        player.sendMessage(ChatColor.WHITE + "\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588" + ChatColor.RESET);
     }
 
     public void unfreeze(UUID uuid) {

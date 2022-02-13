@@ -27,8 +27,8 @@ public class  RequestCommand {
 
         Rocket.getInstance().getRequestCooldownCache().put(player.getUniqueId(),new Cooldown(60_000L));
 
-        Proton.getInstance().getPidginHandler().sendPacket(new StaffBroadcastPacket(NebulaConstants.STAFF_PERMISSION,ChatColor.GOLD + "[" + ChatColor.GOLD + "Request" + ChatColor.GOLD + "]" +
-               ChatColor.GRAY + " (" + ChatColor.YELLOW + Bukkit.getServerName() + ChatColor.GRAY + ") " + ChatColor.GOLD + player.getDisplayName() + ChatColor.GRAY + " needs assistance: " + ChatColor.GOLD + reason)
+        Proton.getInstance().getPidginHandler().sendPacket(new StaffBroadcastPacket(NebulaConstants.STAFF_PERMISSION,ChatColor.BLUE + "[Request]" +
+               ChatColor.DARK_AQUA + " (" + Bukkit.getServerName() + ") " + player.getDisplayName() + ChatColor.GRAY + " needs assistance: " + ChatColor.WHITE + reason)
         );
     }
 

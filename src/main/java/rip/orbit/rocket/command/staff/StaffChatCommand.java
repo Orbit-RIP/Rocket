@@ -20,8 +20,8 @@ public class StaffChatCommand {
 
         final String displayName = sender instanceof Player ? ((Player)sender).getDisplayName(): NebulaConstants.CONSOLE_NAME;
 
-        Proton.getInstance().getPidginHandler().sendPacket(new StaffBroadcastPacket(NebulaConstants.STAFF_PERMISSION,ChatColor.GOLD + "[Staff]" +
-                ChatColor.GRAY + " (" + ChatColor.YELLOW + Bukkit.getServerName() + ChatColor.GRAY + ") " + displayName + ChatColor.GRAY + ": " + ChatColor.YELLOW + message)
+        Proton.getInstance().getPidginHandler().sendPacket(new StaffBroadcastPacket(NebulaConstants.STAFF_PERMISSION,ChatColor.BLUE + "[Staff]" +
+                ChatColor.DARK_AQUA + " (" + Bukkit.getServerName() + ") " + displayName + ChatColor.GRAY + ": " + ChatColor.WHITE + message)
         );
 
     }

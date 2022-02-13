@@ -1,5 +1,5 @@
 name: Rocket
 main: rip.orbit.rocket.Rocket
 version: 1.0-SNAPSHOT
-author: Alfie, LbuddyB0y, Branched
+author: Orbit Development Team
 depend: [Proton]

@@ -51,7 +51,7 @@ public class Rocket extends JavaPlugin {
 
         Proton.getInstance().getCommandHandler().registerAll(this);
 
-        ReflectionUtil.setMaxPlayers(this.getServer(),this.getConfig().getInt("server.slots",100));
+        ReflectionUtil.setMaxPlayers(this.getServer(),this.getConfig().getInt("server.slots",500));
 
         this.chatHandler = new ChatHandler(this);
         this.serverHandler = new ServerHandler(this);

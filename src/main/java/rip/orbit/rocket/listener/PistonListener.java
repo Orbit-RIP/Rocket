@@ -34,7 +34,7 @@ public class PistonListener implements Listener {
         }
 
         Rocket.getInstance().getServer().getScheduler().runTaskLater(Rocket.getInstance(), () -> Proton.getInstance().getPidginHandler().sendPacket(new StaffBroadcastPacket(NebulaConstants.STAFF_PERMISSION,
-                ChatColor.translateAlternateColorCodes('&', "&6[Staff] " + player.getDisplayName() + " &7has joined the server &e" + Bukkit.getServerName() + "&7."))
+                ChatColor.translateAlternateColorCodes('&', "&9[Staff] " + player.getDisplayName() + " &7has &ajoined &7the server &f" + Bukkit.getServerName() + "&7."))
         ), 20L);
     }
 
@@ -47,7 +47,7 @@ public class PistonListener implements Listener {
         }
 
         Proton.getInstance().getPidginHandler().sendPacket(new StaffBroadcastPacket(NebulaConstants.STAFF_PERMISSION,
-                ChatColor.translateAlternateColorCodes('&', "&6[Staff] " + player.getDisplayName() + " &7has left the server &e" + Bukkit.getServerName() + "&7."))
+                ChatColor.translateAlternateColorCodes('&', "&9[Staff] " + player.getDisplayName() + " &7has &cleft &7the server &f" + Bukkit.getServerName() + "&7."))
         );
     }
 
